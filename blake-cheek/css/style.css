@@ -4135,6 +4135,18 @@ h1 {
   margin-bottom: 35px;
 }
 
+.section-instagram p a {
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.section-instagram p a:hover {
+  color: #870000;
+}
+
 .section-instagram .collage {
   grid-column: 1 / 3;
   width: 100%;
