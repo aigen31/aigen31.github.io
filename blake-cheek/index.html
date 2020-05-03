@@ -7,17 +7,51 @@
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/menu_style.css">
 </head>
 <body>
 	<header class="header-main grid">
 		<div class="header-logo">
 			<p>BC PHOTO</p>
 		</div>
-		<input type="checkbox" name="" id="checkbox" class="menu-checkbox">
-		<label for="checkbox" class="menu-btn">
-			<div>
-				<img src="img/header/navigation.svg" alt="">
-			</div>
+		<label class="menu-btn">
+			<input type="checkbox" id="image-btn">
+			<svg id="icon" width="40px" height="40px" viewBox="0 16 32 32">
+			  <g class="icon">
+				<path class="top" d="
+				  M 96, 0
+				  L 72,24
+				  C 68,28 60,32 56,32
+				  L 40,32
+				  C 36,32 28,24 24,24
+				  L  0,24
+				"></path>
+				<path class="middle" d="
+				  M 56,32
+				  L  0,32
+				"></path>
+				<path class="bottom" d="
+				  M 96,64
+				  L 72,40
+				  C 68,36 60,32 56,32
+				  L 40,32
+				  C 36,32 28,40 24,40
+				  L  0,40
+				"></path>
+			  </g>
+			  <defs>
+				<filter id="gooey">
+				  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="0.5"/>
+				  <feColorMatrix in="blur" mode="matrix" values="
+					  1 0 0 0 0
+					  0 1 0 0 0
+					  0 0 1 0 0
+					  0 0 0 18 -7
+					" result="gooey"/>
+				  <feBlend in2="gooey" in="SourceGraphic" result="mix"/>
+				</filter>
+			  </defs>
+			</svg>
 		</label>
 		<nav class="navigation">
 			<div class="menu">	

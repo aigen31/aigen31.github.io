@@ -3864,6 +3864,10 @@ h1 {
   margin-bottom: 0;
 }
 
+.header-main .menu-btn {
+  display: none;
+}
+
 .header-main .navigation {
   margin-bottom: 150px;
   padding-top: 105px;
@@ -3893,26 +3897,14 @@ h1 {
 .header-main .navigation .menu ul li a {
   text-decoration: none;
   color: #000000;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header-main .navigation .menu ul li a:hover {
   font-size: 19px;
   color: #870000;
-}
-
-.header-main .menu-checkbox {
-  display: none;
-}
-
-.header-main .menu-btn {
-  display: none;
-}
-
-.header-main .mobile-menu {
-  display: none;
 }
 
 .header-main .telephone {
@@ -4557,6 +4549,9 @@ textarea::placeholder {
 /*============== Планшетная версия ==============*/
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  body.menu {
+    overflow: hidden;
+  }
   h2 {
     font-size: 32px;
     margin-bottom: 50px;
@@ -4576,65 +4571,51 @@ textarea::placeholder {
     padding-top: 50px;
     padding-left: 50px;
   }
-  .header-main .menu-checkbox, .header-main .menu-btn {
-    margin-top: 50px;
-    margin-right: 50px;
-    z-index: 2;
-    justify-self: end;
-    -webkit-align-self: start;
-        -ms-flex-item-align: start;
-            align-self: start;
-  }
-  .header-main .menu-checkbox:checked ~ .navigation, .header-main .menu-btn:checked ~ .navigation {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: opacity .4s, visibility 0s;
-    -o-transition: opacity .4s, visibility 0s;
-    transition: opacity .4s, visibility 0s;
-  }
-  .header-main .menu-checkbox:checked ~ .navigation > .menu, .header-main .menu-btn:checked ~ .navigation > .menu {
-    left: 0px;
-  }
-  .header-main .menu-checkbox:checked ~ .menu-btn, .header-main .menu-btn:checked ~ .menu-btn {
-    position: fixed;
-    right: 0;
-  }
   .header-main .menu-btn {
     display: block;
-    cursor: pointer;
+    margin-right: 50px;
+    justify-self: end;
+    z-index: 2;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
   }
   .header-main .navigation {
-    position: fixed;
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #ffffff;
     z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    padding-top: 80px;
-    -webkit-transition: opacity .4s, visibility .4s;
-    -o-transition: opacity .4s, visibility .4s;
-    transition: opacity .4s, visibility .4s;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .header-main .navigation .menu {
-    position: relative;
-    justify-self: center;
-    left: -500px;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
-  }
-  .header-main .navigation .menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
   .header-main .navigation .menu ul li {
     display: block;
-    height: 23px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  .header-main .checked {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .header-main .telephone {
     display: none;
@@ -4953,8 +4934,8 @@ textarea::placeholder {
     padding-top: 34px;
     padding-left: 36px;
   }
-  .header-main .menu-checkbox, .header-main .menu-btn {
-    margin-top: 34px;
+  .header-main .menu-btn {
+    margin-top: -15px;
     margin-right: 34px;
   }
   .header-main .telephone {
