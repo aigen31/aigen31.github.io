@@ -4473,6 +4473,7 @@ textarea::placeholder {
   margin-top: 50px;
   margin-bottom: 50px;
   grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
 }
 
 .footer-section .container .footer-logo {
@@ -4820,7 +4821,7 @@ textarea::placeholder {
   }
   .section-portfolio .container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: auto;
+    max-width: 100%;
   }
   .section-portfolio .container h2 {
     grid-column: 1 / 3;
@@ -4832,7 +4833,7 @@ textarea::placeholder {
   }
   .section-video .container {
     grid-template-columns: 1fr;
-    max-width: auto;
+    max-width: 100%;
   }
   .section-video .container h2 {
     grid-column: 1;
@@ -4851,7 +4852,7 @@ textarea::placeholder {
   .section-book .container {
     justify-items: center;
     grid-template-columns: 1fr;
-    max-width: auto;
+    max-width: 100%;
     text-align: center;
   }
   .section-book .container h2 {
@@ -4884,7 +4885,7 @@ textarea::placeholder {
   }
   .section-instagram .container {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
+    max-width: 100%;
   }
   .section-instagram .container h2 {
     grid-column: 1 / 4;
@@ -4949,6 +4950,7 @@ textarea::placeholder {
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
   }
   .footer-section .container .footer-logo {
     text-align: center;
@@ -5090,7 +5092,6 @@ textarea::placeholder {
   .about-section .container {
     justify-items: center;
     grid-template-columns: 1fr;
-    max-width: 100%;
   }
   .about-section .container h2 {
     text-align: center;
@@ -5134,7 +5135,6 @@ textarea::placeholder {
   }
   .work-section .container {
     grid-template-columns: 1fr;
-    max-width: 100%;
   }
   .work-section .container h2 {
     grid-column: 1;
@@ -5167,7 +5167,6 @@ textarea::placeholder {
   }
   .section-video .container {
     grid-template-columns: 1fr;
-    max-width: auto;
   }
   .section-video .container h2 {
     grid-column: 1;
@@ -5187,7 +5186,6 @@ textarea::placeholder {
   .section-book .container {
     justify-items: center;
     grid-template-columns: 1fr;
-    max-width: auto;
     text-align: center;
   }
   .section-book .container h2 {
@@ -5220,7 +5218,6 @@ textarea::placeholder {
   }
   .section-instagram .container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
   }
   .section-instagram .container h2 {
     grid-column: 1 / 3;
@@ -5294,7 +5291,6 @@ textarea::placeholder {
   }
   .section-form .container {
     grid-template-columns: 1fr;
-    max-width: 100%;
   }
   .section-form .container h2 {
     grid-column: 1;
@@ -5322,7 +5318,6 @@ textarea::placeholder {
     grid-column: 1;
   }
   .footer-section .container {
-    max-width: 100%;
     margin-top: 34px;
     margin-bottom: 34px;
     grid-template-columns: 1fr;
