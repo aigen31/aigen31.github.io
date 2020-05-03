@@ -4573,6 +4573,7 @@ textarea::placeholder {
   }
   .header-main .menu-btn {
     display: block;
+    margin-top: -10px;
     margin-right: 50px;
     justify-self: end;
     z-index: 2;
