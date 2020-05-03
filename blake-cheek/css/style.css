@@ -4675,9 +4675,12 @@ textarea::placeholder {
   }
   .header-main .menu-btn {
     display: block;
-    margin-top: -10px;
-    margin-right: 50px;
+    padding-top: 46px;
+    padding-right: 50px;
     justify-self: end;
+    -webkit-align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start;
     z-index: 2;
     outline: none;
     -webkit-tap-highlight-color: transparent;
@@ -5038,8 +5041,8 @@ textarea::placeholder {
     padding-left: 36px;
   }
   .header-main .menu-btn {
-    margin-top: -15px;
-    margin-right: 34px;
+    padding-top: 30px;
+    padding-right: 34px;
   }
   .header-main .telephone {
     display: none;
