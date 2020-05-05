@@ -3575,6 +3575,8 @@ template {
 }
 
 .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -3584,9 +3586,19 @@ template {
   animation-iteration-count: infinite;
 }
 
+.animated.delay-05s {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+
+.animated.delay-15s {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .animated.delay-2s {
@@ -3594,14 +3606,29 @@ template {
   animation-delay: 2s;
 }
 
+.animated.delay-25s {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
 .animated.delay-3s {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 
+.animated.delay-35s {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
 .animated.delay-4s {
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
+}
+
+.animated.delay-45s {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .animated.delay-5s {
@@ -3620,8 +3647,8 @@ template {
 }
 
 .animated.slow {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .animated.slower {
@@ -3935,12 +3962,28 @@ h1 {
   letter-spacing: 0.05em;
 }
 
-.hidden {
-  opacity: 0;
+.about-left[data-emergence=hidden] {
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
-.visible {
-  opacity: 100;
+.about-left[data-emergence=visible] {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.bookright[data-emergence=hidden] {
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.bookright[data-emergence=visible] {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .header-main {
@@ -4117,6 +4160,9 @@ h1 {
 .about-section .container .about-left {
   grid-row: 2 / 4;
   margin-right: 40px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 
 .about-section .container .about-right {
@@ -4261,6 +4307,9 @@ h1 {
 .section-book .container .bookright {
   grid-column: 2;
   grid-row: 2 / 5;
+  -webkit-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .section-book .container p {
@@ -4652,6 +4701,18 @@ textarea::placeholder {
 /*============== Планшетная версия ==============*/
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .animated.delay-05s {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  .animated.delay-1s {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  .animated.delay-15s {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
   body.menu {
     overflow: hidden;
   }
