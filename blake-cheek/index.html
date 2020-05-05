@@ -7,28 +7,6 @@
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 	<script>
-		emergence.init({
-		container: window,
-		reset: true,
-		handheld: true,
-		throttle: 250,
-		elemCushion: 0.15,
-		offsetTop: 0,
-		offsetRight: 0,
-		offsetBottom: 0,
-		offsetLeft: 0,
-		callback: function(element, state) {
-			if (state === 'visible') {
-			console.log('Element is visible.');
-			} else if (state === 'reset') {
-			console.log('Element is hidden with reset.');
-			} else if (state === 'noreset') {
-			console.log('Element is hidden with NO reset.');
-			}
-		}
-		});
-	</script>
-	<script>
 		new WOW().init();
 	</script>
 	<link rel="shortcut icon" href="img/icon/icon.svg" type="image/x-icon">
@@ -133,7 +111,7 @@
 	<section class="about-section">
 		<div class="container grid">
 			<h2>about me</h2>
-			<div class="about-left" data-emergence="hidden">
+			<div class="about-left animated zoomIn wow">
 				<img src="img/about/about.jpg" alt="" class="img-responsive">
 			</div>
 			<div class="about-right">
@@ -256,7 +234,7 @@
 					Read my new book about my life and how I opened my own business in photographs.
 				</p>
 			</div>
-			<div class="bookright" data-emergence="hidden">
+			<div class="bookright animated zoomIn wow">
 				<img src="img/book/book.png" class="img-responsive" alt="">
 			</div>
 			<div class="media-style">
