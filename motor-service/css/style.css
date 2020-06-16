@@ -14554,6 +14554,7 @@ body .header-main {
   background-image: linear-gradient(114.52deg, rgba(60, 77, 87, 0.74) 0.94%, rgba(190, 28, 45, 0.81) 100%), url("../img/background.jpg");
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 150px;
 }
 
 body .header-main .top-line {
