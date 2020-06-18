@@ -3,102 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Motor Service</title>
 </head>
 <body>
 	<header class="header-main">
-		<div class="top-line">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-7">
-						<a href="#">
-							<img class="img-logo" src="img/motor-service-logo.svg" alt="Motor Service — автосервис в Минске">
-						</a>
+		<div class="header-flex">
+			<div class="flex-center">
+				<div class="top-line">
+					<div class="container grid">
+						<div class="tl-logo">
+							<a class="a-logo" href="#">
+								<img class="img-logo" src="img/motor-service-logo.svg" alt="Motor Service — Автосервис в Минске, рядом с метро">
+							</a>
 
-						<p class="p-top-line-14">
-							Автосервис на Гурского, 16а<br>
-							<img class="img-metro" src="img/metro-top-line.svg" alt="Атосервис в Минске 
-							рядом с метро">ст. метро Михалово
-						</p>
-					</div>
+							<p class="p-tl-address">
+								Автосервис на Гурского, 16а<br>
+								<img class="img-metro-icon" src="img/metro-top-line.svg" alt="ст. метро Михалово">ст. метро Михалово
+							</p>
 
-					<div class="col-5 justify-content-between">
-						<p class="p-tel">
+							<a class="a-tel" href="tel:+37529 132-00-72"><i class="fa fa-phone" style="display: none;"></i></a>
+						</div>
+
+						<p class="p-tl-tel">
 							<i class="fa fa-phone"></i>Нужна консультация? Звоните!<br>
 
-							<span>+37529 132-00-72
-								<a href="#"> 
-									<img class="img-viber" src="img/viber-tob-line.svg" alt="">
-								</a>
-
-								<a href="#">
-									<i class="fa fa-whatsapp"></i>
-								</a>
-
-								<a href="#">
-									<i class="fa fa-telegram"></i>
-								</a>
-								</span>
+							<span style="white-space: nowrap;">
+								<a href="tel:+37529 132-00-72">+37529 132-00-72</a>
+								
+								<a href="#"><img src="img/viber-tob-line.svg" alt=""></a>
+								
+								<a href="#"><i class="fa fa-whatsapp"></i></a>
+								
+								<a href=""><i class="fa fa-telegram"></i></a>
+							</span>
 						</p>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="header-flex">
-			<div class="flex-center">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="header-composition">
-								<div class="offer-main">
-									<h1 class="h1">
-										Автосервис в Минске<br>
-										рядом с метро
-									</h1>
 
-									<p class="p-offer-36">
-										Качественно, честно и с душой!
-									</p>
+				<div class="offer-and-form">
+					<div class="container grid">
+						<div class="offer">
+							<h1 class="h1">
+								Автосервис в Минске<br>
+								рядом с метро
+							</h1>
+
+							<h2 class="h2">
+								Качественно, честно и с душой!
+							</h2>
+
+							<div class="triggers">
+								<div class="trigger-main">
+									<img src="img/wrench.svg" alt="" class="img-trigger">
+									<p>Мастера более 10 лет опыт в сервисном центре</p>
 								</div>
 
-								<div class="triggers">
-									<div class="trigger-main">
-										<img src="img/wrench.svg" alt="">
-										<p>Мастера более 10 лет опыт в сервисном центре</p>
-									</div>
+								<div class="trigger-main">
+									<img src="img/repairing-car.svg" alt="" class="img-trigger">
+									<p>5 боксов в нашем автосервисе</p>
+								</div>
 
-									<div class="trigger-main">
-										<img src="img/repairing-car.svg" alt="">
-										<p>5 боксов в нашем автосервисе</p>
-									</div>
-									
-									<div class="trigger-main">
-										<img src="img/truck.svg" alt="">
-										<p>Высокие ворота для грузового транспорта</p>
-									</div>
+								<div class="trigger-main">
+									<img src="img/truck.svg" alt="" class="img-trigger">
+									<p>Высокие ворота для грузового транспорта</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="form-padding">
-								<div class="form-main">
-									<form action="" method="post">
-										<h1 class="h1">
-											Заполните заявку и мы Вам перезвоним!
-										</h1>
+						<div class="form">
+							<form action="" method="post">
+								<h2 class="h2">
+									Заполните заявку и мы Вам перезвоним!
+								</h2>
 
-										<label for="name">Введите имя</label>
-										<input id="name" type="text">
+								<label for="name">
+									Введите имя
+								</label>
+								<input id="name" type="text" name="name" style="margin-bottom: 25px;">
 
-										<label for="telephone">Введите номер телефона</label>
-										<input id="telephone" type="tel">
+								<label for="telephone">
+									Введите номер телефона
+								</label>
+								<input id="telephone" type="tel" name="telephone" style="margin-bottom: 35px;">
 
-										<button class="button" type="submit">
-											<span>Рассчитать стоимость</span>
-										</button>
-									</form>
-								</div>
-							</div>
+								<button class="button animation" type="submit">
+									<span>
+										рассчитать стоимость
+									</span>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -107,39 +99,39 @@
 	</header>
 
 
-	<section class="section-contacts">
-		<div class="section-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-8">
-						<div class="contact-card text-center">
-							<div class="contact-content">
-								<h1 class="h1">Контакты</h1>
-								<p class="p-contact-36">
-									+37529 132-00-72
-								</p>
+	<section class="section-map">
+		<div class="section-flex">
+			<div class="flex-center">
+				<div class="container">
+					<div class="contact-card">
+						<div class="card-body text-center">
+							<h3 class="h3">Контакты</h3>
 
-								<p class="p-contact-24">
-									Автосервис на Гурского, 16а рядом
-									со ст. метро Михалово
-								</p>
+							<a href="tel:+37529 132-00-72">
+								<p>+37529 132-00-72</p>
+							</a>
 
-								<p class="p-contact-14">
-									работаем с 8:00 до 20:00
-								</p>
+							<p class="p-con-address">
+								Автосервис на Гурского, 16а рядом
+								со ст. метро Михалово<br>
+							</p>
 
-								<a href="#" class="button">
-									<span>
-										<img src="img/button-map-marker.svg" alt=""> проложить маршрут до сто
-									</span>
-								</a>
-							</div>
+							<p class="p-con-tel">
+								работаем с 8:00 до 20:00
+							</p>
+
+							<a href="" class="button-up">
+								<span>
+									<img src="img/button-map-marker.svg" alt="">проложить маршрут до сто
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 	<link rel="stylesheet" href="css/style.min.css">
 </body>
