@@ -123,7 +123,7 @@
 								работаем с 8:00 до 20:00
 							</p>
 
-							<a href="" class="button-up">
+							<a href="https://yandex.ru/maps/-/CCQh4FR0GB" class="button-up">
 								<span>
 									<img src="img/button-map-marker.svg" alt="">проложить маршрут до сто
 								</span>
@@ -157,10 +157,11 @@
 				zoom: 17
 			});
 			myMap.behaviors.disable('scrollZoom');
+			myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 			
 			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-				hintContent: 'г. Минск, ул. Городецкая, 71, район Уручье.',
-				balloonContent: 'г. Минск, ул. Городецкая, 71, район Уручье.'
+				hintContent: 'г. Минск, улица Гурского, 16А',
+				balloonContent: 'г. Минск, улица Гурского, 16А'
 			}, {
 				// Опции.
 				// Необходимо указать данный тип макета.
@@ -170,7 +171,7 @@
 				.add(myPlacemark)
 			}
 			var markers = [
-			['EuroService. ул. Городецкая, 71, район Уручье', 53.890054, 27.478746]
+			['EuroService. улица Гурского, 16А', 53.890054, 27.478746]
 			];
 	</script>
 </body>
