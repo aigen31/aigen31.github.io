@@ -100,6 +100,9 @@
 
 
 	<section class="section-map">
+		<div class="map-code">
+			<div id="map"></div>
+		</div>
 		<div class="section-flex">
 			<div class="flex-center">
 				<div class="container">
@@ -134,5 +137,41 @@
 
 
 	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=225d92d3-dba7-48bd-a9c6-6d264e23a2e4&lang=ru_RU" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+		// Функция ymaps.ready() будет вызвана, когда
+		// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+		ymaps.ready(init);
+		function init(){ 
+			// Создание карты.    
+			var myMap = new ymaps.Map("map", {
+				// Координаты центра карты.
+				// Порядок по умолчанию: «широта, долгота».
+				// Чтобы не определять координаты центра карты вручную,
+				// воспользуйтесь инструментом Определение координат.
+				center: [53.890054, 27.478746],
+				controls: [],
+				// Уровень масштабирования. Допустимые значения:
+				// от 0 (весь мир) до 19.
+				zoom: 14
+			});
+			myMap.behaviors.disable('scrollZoom');
+			
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				hintContent: 'г. Минск, ул. Городецкая, 71, район Уручье.',
+				balloonContent: 'г. Минск, ул. Городецкая, 71, район Уручье.'
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				})
+				myMap.geoObjects
+				.add(myPlacemark)
+			}
+			var markers = [
+			['EuroService. ул. Городецкая, 71, район Уручье', 53.890054, 27.478746]
+			];
+	</script>
 </body>
 </html>
