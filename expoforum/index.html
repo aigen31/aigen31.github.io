@@ -1,589 +1,739 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Expoforum</title>
-	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-	<!-- главный header -->
-	<header class="header-main" style="background-image: url(img/main/bgc.jpg);">
-		<div class="container grid">
-			<div class="header-nav">
-				<!-- Лого сайта -->
-				<img src="img/header/h-logo.png" alt="" class="h-logo">
-				
-				<!-- Меню навигации -->
-				<nav class="nav-main">
-					<ul>
-						<li><a href="#">
-							О комплексе
-						</a></li>
-						<li><a href="#">
-							О компании
-						</a></li>
-						<li><a href="#">
-							Новости
-						</a></li>
-						<li><a href="#">
-							Медиа-банк
-						</a></li>
-						<li><a href="#">
-							Контакты
-						</a></li>
-					</ul>
-				</nav>
+<body class="ishome">
+	<!-- Начало HTML -->
+	
+	<div class="" id="my-page">
+		<div class="" id="my-header">
+			<header class="header-main" style="background-image: url(img/bg1.jpg);">
+				<div class="top-line">
+					<div class="row">
+						<a href="#">
+							<img src="img/expoforum-logo1.svg" alt="Экспофорум — конгрессно-выставочный центр Санкт-Петербурга" class="img-logo">
+						</a>
+						
+						<nav class="nav-top-line d-none d-md-inline-block">
+							<ul>
+								<li>
+									<a href="#">О комплексе</a>
+								</li>
 
-				<!-- Поиск и язык -->
-				<div class="search-and-lang">
-					<a class="a-search" href="#">
-						<img src="img/header/search.png" alt="" class="img-search">
-					</a>
+								<li>
+									<a href="#">О компании</a>
+								</li>
 
-					<img class="a-lang" src="img/header/lang.png" alt="" class="img-lang">
+								<li>
+									<a href="#">Новости</a>
+								</li>
 
-					<p class="p-lang-16"><a class="a-lang" href="#">
-						English
-					</a></p>
-				</div>
-			</div>
+								<li>
+									<a href="#">Медиа-банк</a>
+								</li>
 
-			<div class="main-block grid">
-				<div class="main-info">
-					<h1 class="h1-main">Экспофорум</h1>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
 
-					<p class="p-h1">
-						конгрессно-выставочный центр Санкт-Петербурга
-					</p>
+						<div class="search-and-language d-none d-md-inline-block">
+							<form action="" class="form-search">
+								<label for="checkbox-search"><i class="fas fa-search"></i></label>
+								<input id="checkbox-search" type="checkbox" class="checkbox-search">
 
-					<p class="p-info-16">
-						<a href="#">О комплексе →</a>
-					</p>
-				</div>
+								<input type="text" class="input-search">
+							</form>
 
-				<!-- Главный раздел -->
-				<article class="art-info grid">
-					<aside class="aside-info">
-						<div class="text-info">
-							<h3 class="h3-info">
-								Календарь мероприятий
-							</h3>
+							<div class="language-btn">
+								<i class="fas fa-globe i-globe"></i>
 
-							<p class="p-info-14">
-								<a href="#">Подробнее →</a>
-							</p>
+								<span>
+									English
+								</span>
+								
+								<ul class="d-none">
+									<li>
+										English
+									</li>
+
+									<li>
+										Русский
+									</li>
+								</ul>
+							</div>
 						</div>
-					</aside>
 
-					<aside class="aside-info">
-						<div class="text-info">
-							<h3 class="h3-info">
-								Как добраться до Экспофорума
-							</h3>
+						<a href="#my-menu" class="hamburger hamburger--emphatic .d-inline-block d-sm-inline-block d-md-none">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+						
+						<nav id="my-menu">
+							<ul class="text-center">
+								<li>
+									<a href="#">О комплексе</a>
+								</li>
 
-							<p class="p-info-14">
-								<a href="#">Подробнее →</a>
-							</p>
-						</div>
-					</aside>
+								<li>
+									<a href="#">О компании</a>
+								</li>
 
-					<aside class="aside-info">
-						<div class="text-info">
-							<h3 class="h3-info">
-								Онлайн-заявка на организацию мероприятия
-							</h3>
+								<li>
+									<a href="#">Новости</a>
+								</li>
 
-							<p class="p-info-14">
-								<a href="#">Подробнее →</a>
-							</p>
-						</div>
-					</aside>
+								<li>
+									<a href="#">Медиа-банк</a>
+								</li>
 
-					<aside class="aside-info">
-						<div class="text-info">
-							<h3 class="h3-info">
-								План и инфраструктура комплекса
-							</h3>
-
-							<p class="p-info-14">
-								<a href="#">Подробнее →</a>
-							</p>
-						</div>
-					</aside>
-				</article>
-			</div>
-		</div>
-	</header>
-
-
-	<!-- Меню информации -->
-	<nav class="nav-info">
-		<div class="container grid">
-			<!-- Организаторам -->
-			<div class="org">
-				<h2 class="h2-info">
-					Организаторам
-				</h2>
-
-				<ul>
-					<li><a href="#">
-						Документы организаторам
-					</a></li>
-
-					<li><a href="#">
-						Услуги организаторам
-					</a></li>
-
-					<li><a href="#">
-						Выставочные площади
-					</a></li>
-
-					<li><a href="#">
-						Рестораны и кафе
-					</a></li>
-
-					<li><a href="#">
-						Конгресс-центр
-					</a></li>
-
-					<li><a href="#">
-						Спорт-центр
-					</a></li>
-				</ul>
-			</div>
-			
-			<!-- Экспонентам -->
-			<div class="exp">
-				<h2 class="h2-info">
-					Экспонентам
-				</h2>
-
-				<ul>
-					<li><a href="#">
-						Общие условия участия
-					</a></li>
-
-					<li><a href="#">
-						Услуги экспонентам
-					</a></li>
-
-					<li><a href="#">
-						Документы экспонентам
-					</a></li>
-
-					<li><a href="#">
-						Центр деловых контактов
-					</a></li>
-
-					<li><a href="#">
-						Забронировать гостиницу
-					</a></li>
-				</ul>
-			</div>
-
-			<!-- Посетителям -->
-			<div class="vis">
-				<h2 class="h2-info">
-					Посетителям
-				</h2>
-
-				<ul>
-					<li><a href="#">
-						Сервисы
-					</a></li>
-
-					<li><a href="#">
-						Онлайн-регистрация на мероприятие
-					</a></li>
-
-					<li><a href="#">
-						Забронировать гостиницу
-					</a></li>
-
-					<li><a href="#">
-						Центр деловых контактов
-					</a></li>
-				</ul>
-			</div>
-
-			<!-- Прессе -->
-			<div class="pre">
-				<h2 class="h2-info">
-					Прессе
-				</h2>
-
-				<ul>
-					<li><a href="#">
-						Аккредитация
-					</a></li>
-
-					<li><a href="#">
-						Пресс-служба
-					</a></li>
-
-					<li><a href="#">
-						Правила аккредитации
-					</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-
-	<!-- Мероприятия -->
-	<section class="section-ev">
-		<div class="container grid">
-			<div class="ev-top">
-				<h2 class="h2-ev">
-					Текущие и будущие мероприятия
-				</h2>
-
-				<p class="ev-all"><a href="#">
-					Все мероприятия →
-				</a></p>
-			</div>
-
-			<!-- Список мероприятий -->
-			<article class="art-ev grid">
-				<div class="ev-item">
-					<div class="ev-img"></div>
-
-					<p class="p-ev-14">
-						2 января 2020 г. – 7 января 2020 г.
-					</p>
-
-					<h3 class="h3-ev"><a href="#">
-						ЭКСПО ЕЛКА
-					</a></h3>
-
-					<p class="p-ev-16">
-						Парк интерактивных развлечений
-					</p>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 
-				<div class="ev-item">
-					<div class="ev-img"></div>
+				<div class="my-container grid">
+					<div class="header-offer">
+						<h1 class="h1">
+							ЭКСПОФОРУМ
+						</h1>
 
-					<p class="p-ev-14">
-						5 февраля 2020 г. – 9 февраля 2020 г.
-					</p>
-
-					<h3 class="h3-ev"><a href="#">
-						Junwex Петербург
-					</a></h3>
-
-					<p class="p-ev-16">
-						Выставка ювелирных изделий
-					</p>
-				</div>
-
-				<div class="ev-item">
-					<div class="ev-img"></div>
-
-					<p class="p-ev-14">
-						7 февраля 2020 г. – 9 февраля 2020 г.
-					</p>
-
-					<h3 class="h3-ev"><a href="#">
-						Невский ларец
-					</a></h3>
-
-					<p class="p-ev-16">
-						Выставка-ярмарка народных художественных
-						промыслов и ремесел
-					</p>
-				</div>
-
-				<div class="ev-item">
-					<div class="ev-img"></div>
-
-					<p class="p-ev-14">
-						14 февраля 2020 г. – 23 февраля 2020 г.
-					</p>
-
-					<h3 class="h3-ev"><a href="#">
-						ПОНАЕХАЛИ!
-					</a></h3>
-
-					<p class="p-ev-16">
-						Специализированная арт-ярмарка
-					</p>
-				</div>
-
-				<div class="ev-item">
-					<div class="ev-img"></div>
-
-					<p class="p-ev-14">
-						18 февраля 2020 г. – 21 февраля 2020 г.
-					</p>
-
-					<h3 class="h3-ev"><a href="#">
-						VET.CAMP
-					</a></h3>
-
-					<p class="p-ev-16">
-						Конференция для ветеринарных врачей
-					</p>
-				</div>
-
-				<div class="ev-item">
-					<div class="ev-img"></div>
-
-					<p class="p-ev-14">
-						26 февраля 2020 г. – 28 февраля 2020 г.
-					</p>
-
-					<h3 class="h3-ev"><a href="#">
-						ExpoHoReCa
-					</a></h3>
-
-					<p class="p-ev-16">
-						Специализированная выставка
-					</p>
-				</div>
-			</article>
-		</div>
-	</section>
-
-
-	<!-- Новости -->
-	<section class="section-news">
-		<div class="container grid">
-			<!-- Левый раздел -->
-			<article class="art-news-l">
-				<div class="news-item"></div>
-
-				<div class="news-item"></div>
-			</article>
-
-			<!-- Правый раздел -->
-			<article class="art-news-r">
-				<div class="news-top">
-					<h2 class="h2-news">
-						Новости
-					</h2>
-
-					<p class="p-news-21"><a href="#">
-						Все новости →
-					</a></p>
-				</div>
-
-				<!-- Статьи -->
-				<article class="art-news-child grid">
-					<div class="news-img"></div>
-					<div class="news-text">					
-						<p class="p-news-16">
-							4 января 2020 г.
+						<p class="p">
+							конгрессно-выставочный центр 
+							Санкт-Петербурга
 						</p>
 
-						<h3 class="h3-news">
-							Как объединилась реальность и виртуальность – LIKEE PARTY
-						</h3>
+						<a href="">
+							<span>
+								О комплексе
+							</span>
+
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
 					</div>
-				</article>
-				<article class="art-news-child grid">
-					<div class="news-img"></div>
-					<div class="news-text">
-						<p class="p-news-16">
-							2 января 2020 г.
-						</p>
 
-						<h3 class="h3-news">
-							Как объединилась реальность и виртуальность – LIKEE PARTY
-						</h3>
+					<div class="header-items grid">
+						<div class="header-items-body">
+							<div class="header-items-text">
+								<h3 class="h3">
+									Календарь 
+									мероприятий
+								</h3>
+							</div>
+
+							<a href="#"><span>
+								Подробнее
+							</span></a>
+
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
+
+						<div class="header-items-body">
+							<div class="header-items-text">
+								<h3 class="h3">
+									Как добраться
+									до Экспофорума
+								</h3>
+							</div>
+
+							<a href="#"><span>
+								Подробнее
+							</span></a>
+
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
+
+						<div class="header-items-body">
+							<div class="header-items-text">
+								<h3 class="h3">
+									Онлайн-заявка 
+									на организацию
+									мероприятия
+								</h3>
+							</div>
+
+							<a href="#"><span>
+								Подробнее
+							</span></a>
+
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
+
+						<div class="header-items-body">
+							<div class="header-items-text">
+								<h3 class="h3">
+									План 
+									и инфраструктура 
+									комплекса
+								</h3>
+							</div>
+
+							<a href="#"><span>
+								Подробнее
+							</span></a>
+
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
 					</div>
-				</article>
-				<article class="art-news-child grid">
-					<div class="news-img"></div>
-					<div class="news-text">
-						<p class="p-news-16">
-							2 января 2020 г.
-						</p>
-
-						<h3 class="h3-news">
-							Как объединилась реальность и виртуальность – LIKEE PARTY
-						</h3>
-					</div>
-				</article>
-			</article>
-		</div>
-	</section>
-
-
-	<!-- Главный футер -->
-	<footer class="footer-main">
-		<div class="container grid">
-			<!-- Столбцы с разделами -->
-			<div class="footer-col">
-				<nav class="nav-about">
-					<h3 class="h3-footer">
-						О компании
-					</h3>
-					<ul>
-						<li><a href="#">
-							О нашей компании
-						</a></li>
-						
-						<li><a href="#">
-							Вакансии
-						</a></li>
-						
-						<li><a href="#">
-							Партнеры
-						</a></li>
-						
-						<li><a href="#">
-							Контакты
-						</a></li>
-					</ul>
-				</nav>
-
-				<nav class="nav-org">
-					<h3 class="h3-footer">
-						Организаторам
-					</h3>
-					<ul>
-						<li><a href="#">
-							Преимущества площадки
-						</a></li>
-						
-						<li><a href="#">
-							Структура комплекса
-						</a></li>
-						
-						<li><a href="#">
-							Онлайн-заявка на организацию
-						</a></li>
-						
-						<li><a href="#">
-							Документы организаторам
-						</a></li>
-					</ul>
-				</nav>
-			</div>
-
-			<div class="footer-col">
-				<nav class="nav-exp">
-					<h3 class="h3-footer">
-						Экспонентам
-					</h3>
-					<ul>
-						<li><a href="#">
-							Общие условия участия
-						</a></li>
-						
-						<li><a href="#">
-							Услуги экспонентам
-						</a></li>
-						
-						<li><a href="#">
-							Документы экспонентам
-						</a></li>
-						
-						<li><a href="#">
-							Забронировать гостиницу
-						</a></li>
-					</ul>
-				</nav>
-
-				<nav class="nav-vis">
-					<h3 class="h3-footer">
-						Посетителям
-					</h3>
-					<ul>
-						<li><a href="#">
-							Сервисы
-						</a></li>
-						
-						<li><a href="#">
-							Онлайн-регистрация
-						</a></li>
-						
-						<li><a href="#">
-							Забронировать гостиницу
-						</a></li>
-						
-						<li><a href="#">
-							Центр деловых контактов
-						</a></li>
-					</ul>
-				</nav>
-			</div>
-
-			<div class="footer-col">
-				<nav class="nav-pre">
-					<h3 class="h3-footer">
-						Прессе
-					</h3>
-					<ul>
-						<li><a href="#">
-							Аккредитация
-						</a></li>
-						
-						<li><a href="#">
-							Пресс-служба
-						</a></li>
-						
-						<li><a href="#">
-							Правила аккредитации
-						</a></li>
-					</ul>
-				</nav>
-				<div class="footer-app">
-					<h3 class="h3-footer">
-						Приложение
-					</h3>
-
-					<img src="img/footer/apple.png" alt="" class="img-btn-app">
-
-					<img src="img/footer/google.png" alt="" class="img-btn-app">
 				</div>
-			</div>
-
-			<div class="footer-col">
-				<nav class="nav-soc">
-					<h3 class="h3-footer">
-						Мы в соц. сетях
-					</h3>
-
-					<a href="#">
-						<img src="img/footer/youtube.png" alt="" class="img-soc">
-					</a>
-
-					<a href="#">
-						<img src="img/footer/vk.png" alt="" class="img-soc">
-					</a>
-
-					<a href="#">
-						<img src="img/footer/facebook.png" alt="" class="img-soc">
-					</a>
-
-					<a href="#">
-						<img src="img/footer/instagram.png" alt="" class="img-soc">
-					</a>
-				</nav>
-
-				<nav class="nav-notify">
-					<h3 class="h3-footer">
-						Подписка на новости
-					</h3>
-
-					<p class="p-footer-14">
-						Получайте все самые последние новости о мероприятиях в Экспофоруме.
-					</p>
-
-					<form action="" class="form-notify">
-						<input class="input-notify" type="email" placeholder="Введите ваш e-mail">
-						
-						<button type="submit" class="btn-notify">
-							<img class="img-notify" src="img/footer/notifications.png" alt="">
-						</button>
-					</form>
-				</nav>
-			</div>
+			</header>
 		</div>
-	</footer>
 
+
+		<div class="" id="my-content">
+			<section class="section-nav-blue">
+				<div class="my-container grid">
+					<div class="my-col">
+						<h2 class="h2">
+							Организаторам
+						</h2>
+
+						<ul>
+							<li>
+								<a href="#">Документы организаторам</a>
+							</li>
+
+							<li>
+								<a href="#">Услуги организаторам</a>
+							</li>
+
+							<li>
+								<a href="#">Выставочные площади</a>
+							</li>
+
+							<li>
+								<a href="#">Рестораны и кафе</a>
+							</li>
+
+							<li>
+								<a href="#">Конгресс-центр</a>
+							</li>
+
+							<li>
+								<a href="#">Спорт-центр</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="my-col">
+						<h2 class="h2">
+							Экспонентам 
+						</h2>
+
+						<ul>
+							<li>
+								<a href="#">Общие условия участия</a>
+							</li>
+
+							<li>
+								<a href="#">Услуги экспонентам</a>
+							</li>
+
+							<li>
+								<a href="#">Документы экспонентам</a>
+							</li>
+
+							<li>
+								<a href="#">Центр деловых контактов</a>
+							</li>
+
+							<li>
+								<a href="#">Забронировать гостиницу</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="my-col">
+						<h2 class="h2">
+							Посетителям
+						</h2>
+
+						<ul>
+							<li>
+								<a href="#">Сервисы</a>
+							</li>
+							
+							<li>
+								<a href="#">Онлайн-регистрация на мероприятие</a>
+							</li>
+							
+							<li>
+								<a href="#">Забронировать гостиницу</a>
+							</li>
+							
+							<li>
+								<a href="#">Центр деловых контактов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="my-col">
+						<h2 class="h2">
+							Прессе
+						</h2>
+
+						<ul>
+							<li>
+								<a href="#">Аккредитация</a>
+							</li>
+
+							<li>
+								<a href="#">Пресс-служба</a>
+							</li>
+
+							<li>
+								<a href="#">Правила аккредитации</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section-events">
+				<div class="my-container">
+					<div class="events-top">
+						<h2 class="h2">
+							Текущие и будущие мероприятия
+						</h2>
+
+						<div class="events-a">
+							<a href="#"><span>
+								Все мероприятия
+							</span></a>
+
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
+					</div>
+
+					<div class="events-items grid">
+						<div class="events-body">
+							<a href="#">
+								<div class="events-img">
+									<img src="img/event1.jpg" alt="">
+								</div>
+							</a>
+
+							<div class="events-text">
+								<p class="p-14">
+									2 января 2020 г. – 7 января 2020 г.
+								</p>
+								<a href="#">
+									<h3 class="h3">
+										ЭКСПО ЕЛКА
+									</h3>
+								</a>
+
+								<p class="p-descr">
+									Парк интерактивных развлечений
+								</p>
+							</div>
+						</div>
+
+						<div class="events-body">
+							<a href="#">
+								<div class="events-img">
+									<img src="img/event2.jpg" alt="">
+								</div>
+							</a>
+
+							<div class="events-text">
+								<p class="p-date">
+									5 февраля 2020 г. – 9 февраля 2020 г.
+								</p>
+
+								<a href="#">
+									<h3 class="h3">
+										Junwex Петербург
+									</h3>
+								</a>
+
+								<p class="p-descr">
+									Выставка ювелирных изделий
+								</p>
+							</div>
+						</div>
+
+						<div class="events-body">
+							<a href="#">
+								<div class="events-img">
+									<img src="img/event3.jpg" alt="">
+								</div>
+							</a>
+
+							<div class="events-text">
+								<p class="p-date">
+									7 февраля 2020 г. – 9 февраля 2020 г.
+								</p>
+
+								<a href="#">
+									<h3 class="h3">
+										Невский ларец
+									</h3>
+								</a>
+
+								<p class="p-descr">
+									Выставка-ярмарка народных художественных
+									промыслов и ремесел
+								</p>
+							</div>
+						</div>
+
+						<div class="events-body">
+							<a href="#">
+								<div class="events-img">
+									<img src="img/event4.jpg" alt="">
+								</div>
+							</a>
+
+							<div class="events-text">
+								<p class="p-date">
+									14 февраля 2020 г. – 23 февраля 2020 г.
+								</p>
+
+								<a href="#">
+									<h3 class="h3">
+										ПОНАЕХАЛИ!
+									</h3>
+								</a>
+
+								<p class="p-descr">
+									Специализированная арт-ярмарка
+								</p>
+							</div>
+						</div>
+
+						<div class="events-body">
+							<a href="#">
+								<div class="events-img">
+									<img src="img/event5.jpg" alt="">
+								</div>
+							</a>
+
+							<div class="events-text">
+								<p class="p-date">
+									18 февраля 2020 г. – 21 февраля 2020 г.
+								</p>
+
+								<a href="#">
+									<h3 class="h3">
+										VET.CAMP
+									</h3>
+								</a>
+
+								<p class="p-descr">
+									Конференция для ветеринарных врачей
+								</p>
+							</div>
+						</div>
+
+						<div class="events-body">
+							<a href="#">
+								<div class="events-img">
+									<img src="img/event6.jpg" alt="">
+								</div>
+							</a>
+
+							<div class="events-text">
+								<p class="p-date">
+									26 февраля 2020 г. – 28 февраля 2020 г.
+								</p>
+
+								<a href="#">
+									<h3 class="h3">
+										ExpoHoReCa
+									</h3>
+								</a>
+
+								<p class="p-descr">
+									Специализированная выставка
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section-news">
+				<div class="my-container grid">
+					<div class="news-general">
+						<div class="news-general-img">
+							<a href="#"><img src="img/news-general1.jpg" alt=""></a>
+						</div>
+
+						<div class="news-general-img">
+							<a href="#"><img src="img/news-general2.jpg" alt=""></a>
+						</div>
+					</div>
+					
+					<div class="news-list">
+						<div class="news-header">
+							<h2 class="h2">
+								Новости
+							</h2>
+
+							<div class="news-a">
+								<a href="#"><span>
+									Все новости
+								</span></a>
+
+								<i class="fas fa-long-arrow-alt-right"></i>
+							</div>
+						</div>
+
+						<div class="news-items">
+							<div class="news-body grid">
+								<div class="news-list-img">
+									<img src="img/news-item1.jpg" alt="">
+								</div>
+
+								<div class="news-list-text">
+									<p class="p-date">
+										4 января 2020 г.
+									</p>
+
+									<a href="#">
+										<h3 class="h3">
+											Как объединилась реальность и виртуальность – LIKEE PARTY
+										</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="news-body grid">
+								<div class="news-list-img">
+									<img src="img/news-item2.jpg" alt="">
+								</div>
+
+								<div class="news-list-text">
+									<p class="p-date">
+										2 января 2020 г.
+									</p>
+
+									<a href="#">
+										<h3 class="h3">
+											Как объединилась реальность и виртуальность – LIKEE PARTY
+										</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="news-body grid">
+								<div class="news-list-img">
+									<img src="img/news-item3.jpg" alt="">
+								</div>
+
+								<div class="news-list-text">
+									<p class="p-date">
+										2 января 2020 г.
+									</p>
+
+									<a href="#">
+										<h3 class="h3">
+											Как объединилась реальность и виртуальность – LIKEE PARTY
+										</h3>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div class="" id="my-footer">
+			<footer class="footer-main">
+				<div class="my-container grid">
+					<div class="my-col">
+						<nav class="footer-nav-list-top">
+							<h3 class="h3">
+								О компании
+							</h3>
+
+							<ul>
+								<li>
+									<a href="#">О нашей компании</a>
+								</li>
+
+								<li>
+									<a href="#">Вакансии</a>
+								</li>
+
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+
+						<nav class="footer-nav-list-bottom">
+							<h3 class="h3">
+								Организаторам
+							</h3>
+
+							<ul>
+								<li>
+									<a href="#">Преимущества площадки</a>
+								</li>
+
+								<li>
+									<a href="#">Структура комплекса</a>
+								</li>
+
+								<li>
+									<a href="#">Онлайн-заявка на организацию</a>
+								</li>
+
+								<li>
+									<a href="#">Документы организаторам</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					
+					<div class="my-col">
+						<nav class="footer-nav-list-top">
+							<h3 class="h3">
+								Экспонентам
+							</h3>
+
+							<ul>
+								<li>
+									<a href="#">Общие условия участия</a>
+								</li>
+
+								<li>
+									<a href="#">Услуги экспонентам</a>
+								</li>
+
+								<li>
+									<a href="#">Документы экспонентам</a>
+								</li>
+
+								<li>
+									<a href="#">Забронировать гостиницу</a>
+								</li>
+							</ul>
+						</nav>
+
+						<nav class="footer-nav-list-bottom">
+							<h3 class="h3">
+								Посетителям
+							</h3>
+
+							<ul>
+								<li>
+									<a href="#">Сервисы</a>
+								</li>
+
+								<li>
+									<a href="#">Онлайн-регистрация</a>
+								</li>
+
+								<li>
+									<a href="#">Забронировать гостиницу</a>
+								</li>
+
+								<li>
+									<a href="#">Центр деловых контактов</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					
+					<div class="my-col">
+						<nav class="footer-nav-list-top">
+							<h3 class="h3">
+								Прессе
+							</h3>
+
+							<ul>
+								<li>
+									<a href="#">Аккредитация</a>
+								</li>
+
+								<li>
+									<a href="#">Пресс-служба</a>
+								</li>
+
+								<li>
+									<a href="#">Правила аккредитации</a>
+								</li>
+							</ul>
+						</nav>
+
+						<nav class="footer-nav-list-bottom">
+							<h3 class="h3">
+								Приложение
+							</h3>
+
+							<a href="#"><img src="img/appstore.svg" alt=""></a>
+							
+							<a href="#"><img src="img/googleplay.svg" alt=""></a>
+						</nav>
+					</div>
+					
+					<div class="my-col">
+						<nav class="footer-nav-list-top">
+							<h3 class="h3">
+								Мы в соц. сетях
+							</h3>
+
+							<div class="footer-nav-soc">
+								<a href="#"><i class="fab fa-youtube"></i></a>
+
+								<a href="#"><i class="fab fa-vk"></i></a>
+
+								<a href="#"><i class="fab fa-facebook"></i></a>
+
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</nav>
+
+						<nav class="footer-nav-list-bottom">
+							<h3 class="h3">
+								Подписка на новости
+							</h3>
+
+							<p class="p">
+								Получайте все самые последние новости о мероприятиях в Экспофоруме.
+							</p>
+
+							<form action="" class="form-notify">
+								<div class="input-group">
+									<input class="form-control" id="input-email" type="email" name="email" placeholder="Введите ваш E-mail">
+
+									<div class="input-group-append">
+										<span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
+									</div>
+								</div>
+							</form>
+						</nav>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- Конец HTML -->
+
+	<!-- CSS-стили и скрипты -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="https://kit.fontawesome.com/2178352a6c.js" crossorigin="anonymous"></script>
 </body>
 </html>
