@@ -16,6 +16,8 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev-arrow"><img src="img/slick-nav-prev.svg"></div>',
+		nextArrow: '<div class="slick-next-arrow"><img src="img/slick-nav-next.svg"></div>',
 		focusOnSelect:true,
 		variableWidth: true
 	});
