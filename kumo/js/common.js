@@ -16,6 +16,7 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		focusOnSelect:true,
 		variableWidth: true
 	});
   });
