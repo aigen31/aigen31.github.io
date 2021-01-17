@@ -10,3 +10,12 @@ $(document).ready(function(){
 		]
 	});
   });
+
+$(document).ready(function(){
+	$('.section-we-create-new-value-slick-slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		variableWidth: true
+	});
+  });
