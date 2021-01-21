@@ -1,0 +1,48 @@
+form {
+width: 450px;
+padding: 0.5em;
+border: 2px solid #CCC;
+}
+
+form div + div {
+margin-top: 1em;
+}
+
+label {
+display: inline-block;
+width: 90px;
+text-align: right;
+font-size: 1.5rem;
+color: #e3d4ff;
+}
+
+input, textarea {
+font: 1em sans-serif;
+color: #000;
+width: 300px;
+box-sizing: border-box;
+border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+border-color: #000;
+}
+
+textarea {
+vertical-align: top;
+height: 5em;
+}
+
+.button {
+padding-left: 90px;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+button {
+margin-left: .5em;
+}
+
+hr.form {
+color: #CCC;
+}

@@ -1,0 +1,30 @@
+.menu-block {
+  grid-column: 3;
+  grid-row-end: 3;
+  grid-row-start: 1;
+}
+
+.p-menu {
+  grid-column: 1;
+  color: #2D2630;
+  text-align: center;
+  font-size: 26pt;
+}
+
+
+.contacts {
+  grid-column: 2;
+  color: #2D2630;
+  text-align: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  display: grid;
+  margin: 30px;
+  min-width: 100px;
+  max-width: 250px;
+  height: 300px;
+  background-color: rgb(211, 177, 255);
+}
