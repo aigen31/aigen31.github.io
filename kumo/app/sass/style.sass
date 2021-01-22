@@ -68,14 +68,13 @@ img
 // header-main-page start
 
 .header-main-page
-  position: absolute
-  top: 0
-  left: 0
   width: 100%
   box-sizing: border-box
   z-index: 1
   padding: 18px 20px
   align-content: center
+  &.active
+    background-color: $bgc
   .container
     display: flex
     justify-content: space-between
@@ -98,19 +97,27 @@ img
           margin: 0 16px
           list-style-type: none
           &:hover > .nav-header-main-page-menu-list
-            display: block
+            animation: menulist-start .5s
+            opacity: 1
+            visibility: visible
+            max-height: 300px
           a
             transition: color .25s ease
             &:hover
               color: $accent
       &-menu-list
+        display: block
+        opacity: 0
+        visibility: hidden
+        overflow: hidden
+        max-height: 0px
+        transition: opacity 1s ease, visibility 0s, height .5s ease
         background-color: $bgc
-        width: 300px
+        width: 200px
         padding: 30px 20px
         position: absolute
-        display: none
         left: -20px
-        top: 30px
+        top: 20px
         ul
           list-style-type: none
           padding: 0
@@ -125,6 +132,7 @@ img
 
 .section-slider
   &-main-page
+    margin: -76.6px 0 0 0
     position: relative
     z-index: 0
     .slick-arrow
@@ -170,14 +178,13 @@ img
             font-size: 15px
         button
           display: none
-        
     &-bg
       height: 100vh
       .container
         display: flex
         flex-flow: column nowrap
         height: 100%
-        justify-content: center
+        padding: 120px 0 0 0
         p
           color: #ffffff
           max-width: 400px
@@ -465,6 +472,69 @@ img
 // section-why-choose-us end
 
 
+// section-industries-of-application start
+
+.section-industries-of-application
+  padding: 150px 20px
+  &-slider
+    display: flex
+    position: relative
+    padding: 60px 0
+    width: 900px
+    margin: auto
+    overflow: hidden
+    &::after 
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      background: #fff
+      width: 450px
+      height: 40px
+      z-index: 21
+      filter: blur(10px)
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      bottom: 0
+      background: #fff
+      width: 100%
+      height: 40px
+      z-index: 20
+      filter: blur(20px)
+  .hidden 
+    width: 300px
+  .links
+    width: 700px
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    position: absolute
+    left: 0
+    top: 20%
+    text-align: left
+    transition: 0.34s linear
+  .links p 
+    cursor: pointer
+    text-transform: uppercase
+    font-size: 32px
+    font-weight: 700
+    font-family: "RobotoMono"
+    color: $gray
+    height: 30px
+    transition: .5s ease
+  .links p.active
+    color: $accent
+    position: relative
+    font-size: 64px
+  .section-industries-of-application-slider img
+    animation: img-start .5s
+    max-height: 350px
+    max-width: 570px
+
+// section-industries-of-application end
+
 
 // footer-main-page start
 
@@ -510,6 +580,7 @@ img
 
 
 // footer-main-page end
+
 
 
 //**     Media rules    **//

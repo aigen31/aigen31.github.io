@@ -46,8 +46,6 @@ gulp.task('browser-sync', function() {
 //minification
 gulp.task('minifyjs', function() { // .js
     return gulp.src([
-        'app/libs/jquery/jquery.js',
-        'app/libs/OwlCarousel2/owl.carousel.js',
         'app/js/common.js',
         'app/libs/jquery.vide.js/jquery.vide.js' // files
     ])
@@ -155,4 +153,4 @@ gulp.task('css-libs', gulp.series('sass', 'minifycss'));
 gulp.task('build', gulp.series('css-libs', 'minifyjs', 'clean', 'compress', (gulp.parallel([
     'sass', 'prebuild'
 ]))));
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'css-libs'));
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'css-libs', 'minifyjs'));

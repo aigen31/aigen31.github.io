@@ -20,3 +20,9 @@ $(document).ready(function(){
 		variableWidth: true
 	});
   });
+
+$(document).ready(function(){
+	$(window).on("scroll", function() {
+		$('.header-main-page').toggleClass('active', $(this).scrollTop() > $(window).height());
+	});
+});
