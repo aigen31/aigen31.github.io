@@ -1,13 +1,11 @@
 $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
-		items:1,
-		loop:true,
-		nav:true,
-		dots:true,
-		navText:[
-			'<img src="img/nav-prev.svg">',
-			'<img src="img/nav-next.svg">'
-		]
+	$('.slider-main-page').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		prevArrow: '<div class="slick-prev-arrow"><img src="img/nav-prev.svg"></div>',
+		nextArrow: '<div class="slick-next-arrow"><img src="img/nav-next.svg"></div>'
 	});
   });
 
@@ -22,3 +20,9 @@ $(document).ready(function(){
 		variableWidth: true
 	});
   });
+
+$(document).ready(function(){
+	$(window).on("scroll", function() {
+		$('.header-main-page').toggleClass('active', $(this).scrollTop() > $(window).height());
+	});
+});
