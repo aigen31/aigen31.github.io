@@ -117,6 +117,11 @@ gulp.task('prebuild', async function() { // uploading files
     )
     .pipe(gulp.dest('dist/bg'));
 
+    var buildLibs = gulp.src(
+        'app/libs/**/*'
+    )
+    .pipe(gulp.dest('dist/libs'));
+
     var buildHTML = gulp.src(
         'app/*.html'
     )
