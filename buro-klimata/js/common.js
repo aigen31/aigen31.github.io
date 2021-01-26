@@ -26,3 +26,10 @@ $(document).ready(function(){
 		$('.header-main-page').toggleClass('active', $(this).scrollTop() > $(window).height());
 	});
 });
+
+// $(document).ready(function(){
+// 	$(".section-faq__arrow").click(function () {
+// 		$(".section-faq__header").removeClass("active");
+// 		$(this).addClass("active");
+// 	  });
+// })
