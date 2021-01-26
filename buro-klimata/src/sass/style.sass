@@ -1,0 +1,415 @@
+//**     Подключение стилей     **//
+@import 'vars'
+@import 'libs'
+@import 'fonts'
+@import 'keyframes'
+
+//** general styles **//
+
+body
+  overflow-x: hidden
+  font-family: "Gilroy", Arial, Helvetica, sans-serif
+  font-size: 16px
+  line-height: 1.4
+  min-width: 320px
+
+.container
+  position: relative
+  max-width: 1140px
+  width: 100%
+  margin: auto
+  &-fluid
+    width: 100%
+    max-width: 100%
+
+img
+  width: 100%
+
+.btn
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  max-width: 262px
+  width: 100%
+  height: 55px
+  background-color: $accent
+  outline: none
+  border: none
+  border-radius: 27.5px
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.36)
+  font-size: 18px
+  font-weight: 800
+  color: #ffffff
+  text-decoration: none
+  &_s-border
+    border-radius: 10px
+  &_fluid
+    width: 100%
+
+//**     sections styles      **//
+
+
+//** sections styles start **//
+
+/**
+ * section-offer start
+ */
+
+.section-offer
+  min-height: 600px
+  box-sizing: border-box
+  height: 100%
+  width: 100%
+  background-color: $main
+  background-size: cover
+  background-position: center
+  padding: 50px 20px
+  .container
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+
+  .section-offer-left
+    max-width: 700px
+    width: 100%
+    flex-grow: 1
+    &__title
+      max-width: 500px
+      width: 100% 
+      font-size: 48px
+      font-weight: 800
+      color: #000000
+      text-transform: uppercase
+    &__list
+      display: flex
+      flex-flow: row nowrap
+      padding: 0 0 0 20px
+      margin: 0 0 70px 0
+    &__item
+      font-weight: 300
+      font-size: 24px
+      &:not(:last-child)
+        margin: 0 30px 0 0
+
+    &__triggers
+      list-style-type: none
+      padding: 0
+    &__triggers-item
+      display: grid
+      grid-template-columns: 50px 1fr
+      column-gap: 10px
+      align-items: center
+      margin-bottom: 20px
+    &__triggers-img
+      width: 100%
+    &__triggers-text
+      font-size: 24px
+      font-weight: 800
+      color: #ffffff
+      margin: 0
+
+
+  .section-offer-right
+    max-width: 350px
+    flex-grow: 1
+    width: 100%
+    &__contact-form
+      display: flex
+      flex-flow: column nowrap
+      align-items: center
+    &__cta-text
+      color: #ffffff
+      text-align: center
+      font-size: 24px
+      font-weight: 300
+    &__input
+      box-sizing: border-box
+      display: flex
+      align-items: center
+      padding: 0 20px
+      outline: none
+      border: none
+      border-radius: 27.5px
+      width: 262px
+      height: 55px
+      box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.36)
+      &:not(:last-of-type)
+        margin: 0 0 20px 0
+      &::placeholder
+        text-align: center
+        color: #000000
+    .btn
+      margin: 20px 0 0 0
+
+/**
+ * section-offer end
+ */
+
+
+/**
+ * section-price start
+ */
+
+.section-price
+  padding: 70px 20px
+  &__cards
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    column-gap: 30px
+    row-gap: 60px
+  &__content
+    background-color: $main
+    border-radius: 10px
+    padding: 15px
+  &__product-img
+    width: 100%
+    margin: 0 0 15px 0
+  &__product-name
+    font-weight: 800
+    color: #ffffff
+    font-size: 24px
+    text-align: center
+    margin: 0
+  &__title
+    text-align: center
+    font-size: 36px
+    color: #000000
+    font-weight: 800
+    padding: 0 0 70px 0
+    text-transform: uppercase
+  &__footer
+    text-align: center
+    font-size: 18px
+    color: #000000
+    .footer_bold
+      font-weight: 800
+
+/**
+ * section-price end
+ */
+
+
+/**
+ * section-price start
+ */
+
+.section-work
+  padding: 75px 20px
+  background-color: $main
+  background-size: cover
+  background-position: center
+  &__title
+    text-align: center
+    color: #ffffff
+    font-size: 36px
+    font-weight: 800
+    margin: 0 0 70px 0
+    text-transform: uppercase
+  &__content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    column-gap: 50px
+    row-gap: 60px
+  &__col
+    position: relative
+  &__text
+    font-size: 24px
+    font-weight: 800
+    color: #ffffff
+    text-align: center
+  &__img
+    width: 100%
+  &__arrow
+    position: absolute
+    right: -50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100px
+    &_down
+      top: 10%
+
+/**
+ * section-price end
+ */
+
+
+/**
+ * section-we start
+ */
+
+.section-we
+  padding: 75px 20px
+  &__title
+    text-align: center
+    margin: 0 0 70px 0
+    font-size: 36px
+    font-weight: 800
+    color: #000000
+    text-transform: uppercase
+  &__content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    column-gap: 30px
+    row-gap: 60px
+  &__img
+    width: 100%
+  &__card
+    display: grid
+    grid-template-rows: 1fr 100px
+  &__text
+    text-align: center
+    font-size: 24px
+    color: #000000
+    font-weight: 800
+
+/**
+ * section-we end
+ */
+
+
+/**
+ * section-we start
+ */
+
+.section-request
+  padding: 75px 20px
+  background-color: $main
+  background-size: cover
+  background-position: center
+  &__title
+    font-size: 36px
+    color: #ffffff
+    font-weight: 800
+    margin: 0 0 50px 0
+    text-transform: uppercase
+  &__text
+    color: #ffffff
+    margin: 0
+    max-width: 540px
+    width: 100%
+    font-size: 24px
+  .btn
+    margin-top: 50px
+
+/**
+ * section-we end
+ */
+
+
+/**
+ * section-montage start
+ */
+
+.section-montage
+  padding: 75px 20px
+  &__title
+    text-align: center
+    margin: 0 0 35px 0
+    font-size: 36px
+    font-weight: 800
+    color: #000000
+    text-transform: uppercase
+  &__subtitle
+    font-size: 24px
+    color: #000000
+    text-align: center
+    margin: 0 0 50px 0
+  &__content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px))
+    justify-content: center
+    column-gap: 30px
+    row-gap: 60px
+  &__body
+    box-shadow: 0px 0px 40px 0px rgba(47, 132, 160, 0.09)
+    border-radius: 20px
+    padding: 30px
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-between
+  &__header
+  &__table-title
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: 800
+    color: #000000
+  &__table
+    border-spacing: 0px
+    border-collapse: collapse
+    width: 100%
+  &__row
+    &:nth-of-type(1)
+      .section-montage__col
+        border-top: none
+        border-bottm: solid 3px #000000
+        &:nth-of-type(2)
+          .section-montage__col
+            border-top: solid 3px #000000
+        &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+          font-size: 18px
+  &__col
+    border: solid 1px #000000
+    padding: 5px 10px
+    font-size: 24px
+    color: #000000
+    &:nth-of-type(1)
+      text-align: left
+      padding: 5px 0
+      border-left: none
+    &:nth-of-type(2)
+      text-align: center
+    &:nth-of-type(3)
+      text-align: right
+      padding: 5px 0
+      border-right: none
+  .btn
+    margin: 30px auto 0 auto
+
+
+/**
+ * section-montage end
+ */
+
+
+/**
+ * section-optional start
+ */
+
+.section-optional
+  &__title
+    text-align: center
+    margin: 0 0 35px 0
+    font-size: 36px
+    font-weight: 800
+    color: #000000
+    text-transform: uppercase
+  &__subtitle
+    font-weight: 800
+    font-size: 18px
+  &__description
+    font-size: 18px
+  &__table
+    border-spacing: 0px
+    border-collapse: collapse
+    width: 100%
+  &__row
+    &:first-of-type
+      font-weight: 800
+  &__col
+    border: solid 1px #000000
+    padding: 5px 10px
+    &:first-of-type
+      width: 90%
+
+
+/**
+ * section-optional end
+ */
+
+//** sections styles start **//
+
+//**     Media rules    **//
+@import 'media'
