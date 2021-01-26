@@ -1103,6 +1103,10 @@ img {
   margin: 0;
 }
 
+.section-faq__body {
+  margin: 0 0 30px 0;
+}
+
 .section-faq__arrow {
   cursor: pointer;
   width: 25px;
@@ -1181,7 +1185,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  .section-work__title, .section-price__title, .section-offer-left__title, .section-we__title, .section-request__title, .section-montage__title, .section-clients__title, .section-optional__title, .section-portfolio__title {
+  .section-work__title, .section-price__title, .section-offer-left__title, .section-we__title, .section-request__title, .section-montage__title, .section-clients__title, .section-optional__title, .section-portfolio__title, .section-question__title, .section-faq__title, .section-seo__title, .section-dillers__title {
     font-size: 32px;
   }
   .section-offer .section-offer-left__title {
