@@ -5,7 +5,16 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		dots: true,
 		prevArrow: '<div class="slick-prev-arrow"><img src="img/nav-prev.svg"></div>',
-		nextArrow: '<div class="slick-next-arrow"><img src="img/nav-next.svg"></div>'
+		nextArrow: '<div class="slick-next-arrow"><img src="img/nav-next.svg"></div>',
+		responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				arrows: false,
+				dots: false
+			  }
+			}
+		]
 	});
   });
 
@@ -17,7 +26,18 @@ $(document).ready(function(){
 		prevArrow: '<div class="slick-prev-arrow"><img src="img/slick-nav-prev.svg"></div>',
 		nextArrow: '<div class="slick-next-arrow"><img src="img/slick-nav-next.svg"></div>',
 		focusOnSelect:true,
-		variableWidth: true
+		variableWidth: true,
+		responsive: [
+			{
+			  breakpoint: 1300,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				variableWidth: true,
+				arrows: false
+			  }
+			}
+		]
 	});
   });
 
